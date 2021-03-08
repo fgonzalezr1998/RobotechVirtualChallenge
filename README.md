@@ -1,5 +1,11 @@
 # RobotechVirtualChallenge
 
+![maze](resources/header_social_media.png)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![distro](https://img.shields.io/badge/ROS-noetic-purple)
+![last commit](https://img.shields.io/github/last-commit/RoboTech-URJC/RobotechVirtualChallenge)
+![forks](https://img.shields.io/github/forks/RoboTech-URJC/RobotechVirtualChallenge?style=social)
+
 ## Launching the Robotech virtual challenge world
 
 ### Clone the repo in your workspace and build it.
@@ -12,6 +18,8 @@ git clone --recursive [-b noetic] https://github.com/RoboTech-URJC/RobotechVirtu
 ```console
   source ~/[robotech_ws]/devel/setup.bash
   export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:[robotech_ws]/src/RobotechVirtualChallenge/robots/worlds/models
+  export TURTLEBOT3_MODEL=waffle
+  rosdep check --from-paths ~/[robotech_ws]/src/RobotechVirtualChallenge -i
 ```
 ### Launching Gazebo
 ```console
